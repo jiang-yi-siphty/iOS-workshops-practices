@@ -9,5 +9,8 @@
         <page name='vi removeAll(where)'/>
         <page name='vii Boolean toggle()'/>
         <page name='viii allCases'/>
+        <page name='ix #warning("") and #error("")'/>
+        <page name='x dynamicMemberLookup'/>
+        <page name='xi Enhanced conditional conformances'/>
     </pages>
 </playground>
