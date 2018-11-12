@@ -9,5 +9,6 @@ passed
 
 scores = [85, 88, 95, 92]
 passed = scores.allSatisfy { $0 >= 85 }
+scores
 passed
 //: [Next](@next)

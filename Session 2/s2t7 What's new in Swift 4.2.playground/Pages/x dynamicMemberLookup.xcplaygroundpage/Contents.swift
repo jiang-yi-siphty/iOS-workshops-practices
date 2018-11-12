@@ -4,8 +4,9 @@ import Foundation
 
 @dynamicMemberLookup
 struct Person {
+    var properties = [String: String]()
+    
     subscript(dynamicMember member: String) -> String {
-        let properties = ["name": "Taylor Swift", "city": "Nashville", "gender": "Female"]
         return properties[member, default: "🚨No such key/value"]
     }
 
@@ -20,7 +21,9 @@ struct Person {
     }
 }
 
-let person = Person()
+var person = Person()
+person.properties = ["name": "Taylor Swift", "city": "Nashville", "gender": "Female"]
+
 let name: String = person.name
 print(name)
 let city: String = person.city
