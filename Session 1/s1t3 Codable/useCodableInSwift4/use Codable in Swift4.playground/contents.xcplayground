@@ -11,6 +11,7 @@
         <page name='page7'/>
         <page name='page8'/>
         <page name='page9'/>
-        <page name='page10MyCase'/>
+        <page name='page12MyCase'/>
+        <page name='page13enumItemType'/>
     </pages>
 </playground>
