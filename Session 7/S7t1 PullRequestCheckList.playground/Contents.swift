@@ -32,7 +32,7 @@ var isPositionCorrect: Bool  = {
     return Bool.random()
 }()
 
-// Bad: DRY
+// 👎🏼: DRY
 if isPositionCorrect {
     updateUI("Position Correct", isPositionCorrect)
 } else {
@@ -41,11 +41,21 @@ if isPositionCorrect {
 
 //: **Use early exit**
 
-// Good: 
+// 👍: 
 let message = isPositionCorrect ? "Position Correct" : "Position InCorrect"
 updateUI(message, isPositionCorrect)
 
+//: Use early exit
+// Use "guard let", "if let" as early as possible
 
+// Use array lazy functional programming.
+func fibonacci(_ n: Int) -> Int {
+    guard n != 0, n != 1 else { return n }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+let lotsOfNumbers = 1...1_000_000
+let result = lotsOfNumbers.lazy.map{return fibonacci($0)}
+let combinedByFiveRule = result[5] + result[55] + result[555] + result[5555] + result[55555]
 // Hard coding string
 
 //: Logic
