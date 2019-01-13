@@ -16,7 +16,7 @@
  🤮: Weak
  
  
-     
+    
  
  */
 
@@ -53,10 +53,12 @@ func fibonacci(_ n: Int) -> Int {
     guard n != 0, n != 1 else { return n }
     return fibonacci(n - 1) + fibonacci(n - 2)
 }
-let lotsOfNumbers = 1...1_000_000
+let lotsOfNumbers = Array(1...1_000_000)
 let result = lotsOfNumbers.lazy.map{return fibonacci($0)}
-let combinedByFiveRule = result[5] + result[55] + result[555] + result[5555] + result[55555]
-// Hard coding string
+let combinedByFiveRule = result[20] 
+print("combinedByFiveRule: \(combinedByFiveRule)")
+
+//: Hard coding string
 
 //: Logic
 
