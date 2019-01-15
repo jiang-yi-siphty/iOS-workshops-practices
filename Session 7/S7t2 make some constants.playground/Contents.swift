@@ -23,19 +23,24 @@ print(StructConstant.Name)
 
 //: ### 3. Normal enum constants
 //: *Define:*
-enum Constants {
+enum EnumConstants {
     static let float: CGFloat = 80 
     static let string = "Constant String"
+    static let name = "Yi"
+    static let address = "secret"
+    static let phone = "N/A"
+    static let mobile = "0433092885"
 }
 
 enum ConstantWithSingleType: String {
-    case StringOne = "String one"
-    case StringTwo = "String Two"
-    case StringThree = "String Three"
+    case stringOne = "String one"
+    case stringTwo = "String Two"
+    case stringThree = "String Three"
 }
+
 //: *Usage:*
 print(Constants.float)
-print(ConstantWithSingleType.StringOne.rawValue)
+print(ConstantWithSingleType.stringOne.rawValue)
 
 //: ### 4. Default enum constants
 //: *Define:*
