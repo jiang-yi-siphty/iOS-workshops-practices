@@ -30,6 +30,7 @@ enum EnumConstants {
     static let address = "secret"
     static let phone = "N/A"
     static let mobile = "0433092885"
+    static let count = 100
 }
 
 enum ConstantWithSingleType: String {
@@ -39,7 +40,7 @@ enum ConstantWithSingleType: String {
 }
 
 //: *Usage:*
-print(Constants.float)
+print(EnumConstants.float)
 print(ConstantWithSingleType.stringOne.rawValue)
 
 //: ### 4. Default enum constants
