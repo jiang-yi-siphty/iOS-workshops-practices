@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='5.0' target-platform='ios' executeOnSourceChanges='false'>
-    <timeline fileName='timeline.xctimeline'/>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Introduction'/>
+        <page name='A standard Result type'/>
+        <page name='Checking for integer multiples'/>
+        <page name='Customizing string interpolation'/>
+        <page name='Dynamically callable types'/>
+        <page name='Flattening nested optionals resulting from try?'/>
+        <page name='Handling future enum cases'/>
+        <page name='Raw strings'/>
+        <page name='Result type'/>
+        <page name='Transforming and unwrapping dictionary values'/>
+        <page name='Untitled Page'/>
+    </pages>
 </playground>
