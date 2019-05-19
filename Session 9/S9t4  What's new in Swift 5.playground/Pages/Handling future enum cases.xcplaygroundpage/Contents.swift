@@ -48,6 +48,8 @@
             print("Your password wasn't suitable.")
         }
     }
+
+
 /*:
  That code will now issue warnings because the `switch` block is no longer exhaustive – Swift wants us to handle each case explicitly. Helpfully this is only a *warning*, which is what makes this attribute so useful: if a framework adds a new case in the future you’ll be warned about it, but it won’t break your source code.
  

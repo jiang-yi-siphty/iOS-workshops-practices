@@ -25,7 +25,26 @@ struct User {
 }
 
 let user = User(id: 1)
-let messages = try? user?.getMessages()
+//在实际应用中确实遇到这个情况， try？之后的optional 拆包很麻烦
+
+// Swift 4.2
+// 这里得到的message的类型是: let messages: String??
+let messages1 = try? user?.getMessages()
+
+//Swift 5
+// 这里得到的message的类型是: let messages: String?
+let messages2 = try? user?.getMessages()
+
+
+// Swift 4.2 如果我们想得到非可选值就需要
+// print((messages1 ?? "") ?? "")
+// 或者多次强解, 当然不建议强解写法
+// print(messages1!!)
+
+
+
+// Swift 5
+print(messages2 ?? "") 
 /*:
  The `User` struct has a failable initializer, because we want to make sure folks create users with a valid ID. The `getMessages()` method would in theory contain some sort of complicated code to get a list of all the messages for the user, so it’s marked as `throws`; I’ve made it return a fixed string so the code compiles.
 

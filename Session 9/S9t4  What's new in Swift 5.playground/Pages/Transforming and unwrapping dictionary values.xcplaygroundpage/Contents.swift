@@ -32,6 +32,23 @@ You can also use `compactMapValues()` to unwrap optionals and discard nil values
     ]
     
     let knownAges = people.compactMapValues { $0 }
+
+// 实践
+
+let newTimes = [
+    "first": 2,
+    "second": 43,
+    "three": 12,
+    "four": 3
+]
+
+let compact = newTimes.compactMap({ return $0.value > 10 ? $0 : nil })
+print(compact)
+
+let filter = newTimes.filter { $0.value > 10
+}
+print(filter)
+
 /*:
  [< Previous](@previous)           [Home](Introduction)
  */
