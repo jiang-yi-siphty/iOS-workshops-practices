@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-
-
 struct AppFlowRouter {
     
     static weak var topmostViewController: UIViewController? {
@@ -22,7 +20,7 @@ struct AppFlowRouter {
                 return topmostViewController
             }
         }
-        return topmostViewController
+        return nil
     }
     
     static func initFloatingButtonView() {

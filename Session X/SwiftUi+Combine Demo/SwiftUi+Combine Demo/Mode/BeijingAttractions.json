@@ -1,0 +1,62 @@
+[
+    {
+        "name": "中南海",
+        "category": "古建筑",
+        "city": "北京",
+        "state": "北京",
+        "id": 1000,
+        "coordinates": {
+            "latitude": 39.911389,
+            "longitude": 116.380556
+        },
+        "imageName": "zhongnanhai"
+    },
+    {
+        "name": "天坛",
+        "category": "古建筑",
+        "city": "北京",
+        "state": "北京",
+        "id": 1001,
+        "coordinates": {
+            "latitude": 39.8822,
+            "longitude": 116.4066
+        },
+        "imageName": "Harvest"
+    },
+    {
+        "name": "中国国家博物馆",
+        "category": "博物馆",
+        "city": "北京",
+        "state": "北京",
+        "id": 1002,
+        "coordinates": {
+            "latitude": 39.90333,
+            "longitude": 116.39444
+        },
+        "imageName": "236"
+    },
+    {
+        "name": "天安门",
+        "category": "古建筑",
+        "city": "北京",
+        "state": "北京",
+        "id": 1003,
+        "coordinates": {
+            "latitude": 39.907333,
+            "longitude": 116.391083
+        },
+        "imageName": "天安门"
+    },
+    {
+        "name": "恭王府",
+        "category": "古建筑",
+        "city": "北京",
+        "state": "北京",
+        "id": 1004,
+        "coordinates": {
+            "latitude": 39.935976,
+            "longitude": 116.386458
+        },
+        "imageName": "恭王府"
+    }
+]
