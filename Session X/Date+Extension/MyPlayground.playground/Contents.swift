@@ -58,6 +58,20 @@ extension Date {
     return formatter.string(from: self)
   }
 
+  
+  func stripTime() -> Date?{
+    let components = Calendar.current.dateComponents([.year, .month, .day], from: self)
+    return Calendar.current.date(from: components)
+  }
+  
+  func diff(_ date: Date) -> Int? {
+    guard let currentDate = self.stripTime(),
+      let date = date.stripTime() else { return nil }
+    var calendar = Calendar.current
+    calendar.timeZone = TimeZone.current
+    return calendar.dateComponents([.day], from: currentDate, to: date).day
+  }
+
 }
 
 Date().nextYear
@@ -68,7 +82,13 @@ Date().dayOfWeek
 Date().hour24
 Date().hour12
 Date().minutes
-// String to DateTime
+
+
+let date = "2019-06-15"
+let formatter = DateFormatter()
+formatter.dateFormat = "yyyy-MM-dd"
+let windowDate = formatter.date(from: date) ?? Date()
+Date().diff(formatter.date(from: date) ?? Date())
 
 
 
