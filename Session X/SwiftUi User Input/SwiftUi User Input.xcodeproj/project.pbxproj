@@ -341,6 +341,7 @@
 				DEVELOPMENT_TEAM = 4PQU2QH5JS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUi User Input/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +362,7 @@
 				DEVELOPMENT_TEAM = 4PQU2QH5JS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUi User Input/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,6 +15,8 @@ struct AttractionsList : View {
                 NavigationButton(destination: LandmarkDetail(landmark: landmark)) {
                     LandmarkRow(landmark: landmark)
                 }
+                .padding(.top, 32.0)
+                .padding(.leading, 62.0)
             }.navigationBarTitle(Text("旅游景点"))
                 
         }
