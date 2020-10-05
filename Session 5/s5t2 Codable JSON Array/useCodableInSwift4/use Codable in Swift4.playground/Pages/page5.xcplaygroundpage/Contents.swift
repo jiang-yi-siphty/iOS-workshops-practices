@@ -167,7 +167,7 @@ try! encode(of: Student())
 //: ## 自定义decoding
 
 //: 时间格式处理
-/*
+
 struct Student: Codable {
     let registerTime: Date
     
@@ -183,9 +183,9 @@ struct Student: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let registerTime = try container.decode(Date.self, forKey: .registerTime)
 //        let dateString = try container.decode(String.self, forKey: .registerTime)
-//        let formaater = DateFormatter()
-//        formaater.dateFormat = "yyyy-MM-dd HH:mm:ss z"
-//        let registerTime = formaater.date(from: dateString)!
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss z"
+//        let registerTime = formatter.date(from: dateString)!
         self.init(registerTime: registerTime)
     }
 }
@@ -197,7 +197,7 @@ let res = """
 """
 let stu = try! decode(of: res, type: Student.self)
 dump(stu)
-*/
+
 
 
 //: 数组处理
